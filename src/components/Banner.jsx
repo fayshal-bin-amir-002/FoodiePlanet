@@ -16,7 +16,7 @@ const Banner = () => {
                     Spicy delicious chicken wings
                 </h1>
                 <p className="text-gray-500 mb-6 lg:mb-8">Welcome to FoodiePlanet – A culinary journey across the globe! Discover an eclectic mix of flavors and dishes inspired by the world&apos;s most beloved cuisines. From sizzling street food to gourmet delicacies, our menu offers something for every palate. Indulge in a feast of taste, quality, and tradition, all in one place. Explore our chef&apos;s special creations, seasonal delights, and the freshest ingredients, all served with love and passion. Join us at FoodiePlanet, where every meal is a celebration of food and culture.</p>
-                <div className="flex justify-start items-center gap-7 mb-8">
+                <div className="flex justify-start items-center gap-7 mb-6 lg:mb-8">
                     <p className="flex items-center gap-1 px-2 py-1 bg-gray-200/80 rounded-full"><BsStopwatchFill className="inline" /> 30 Minutes</p>
                     <p className="flex items-center gap-1 px-2 py-1 bg-gray-200/80 rounded-full"><TbToolsKitchen className="inline" /> Chicken</p>
                 </div>
