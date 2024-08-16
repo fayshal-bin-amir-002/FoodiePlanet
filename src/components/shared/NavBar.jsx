@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
 
@@ -15,19 +18,23 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-                <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                    <a href="#" className="flex items-center">
-                        <img src="https://www.svgrepo.com/show/499962/music.svg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Landwind</span>
-                    </a>
+            <nav className="bg-white border-gray-200 py-4 border-b">
+                <div className="flex flex-wrap items-center justify-between">
+                    <Link to={"/"} className="flex items-center w-36 lg:w-40">
+                        <img src="./logo.png" alt="logo" />
+                    </Link>
                     <div className="flex items-center lg:order-2">
-                        <div className="hidden mt-2 mr-4 sm:inline-block">
-                            <span></span>
+                        <div className="flex justify-center items-end gap-4 text-xl">
+                            <a href="https://www.facebook.com/foyshal.binamir.3" target="_blank" rel="noopener noreferrer">
+                                <FaFacebookF className="inline" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/fayshal-bin-amir" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin className="inline" />
+                            </a>
+                            <a href="https://github.com/fayshal-bin-amir-002" target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="inline" />
+                            </a>
                         </div>
-
-                        <a href="https://themesberg.com/product/tailwind-css/landing-page"
-                            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
                         <button onClick={() => setIsToggleOpen(!isToggleOpen)} data-collapse-toggle="mobile-menu-2" type="button"
                             className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="mobile-menu-2" aria-expanded="true">
@@ -47,7 +54,7 @@ const NavBar = () => {
                     <div className="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul className={`lg:flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ${isToggleOpen ? 'flex' : 'hidden'}`}>
                             {
-                                navLinks.map((nav) => <li key={nav.name} className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-black lg:p-0 lg:hover:text-purple-700 duration-500">
+                                navLinks.map((nav) => <li key={nav.name} className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-black lg:p-0 lg:hover:text-purple-700 duration-500 my-0.5 lg:my-0 text-lg font-normal text-center">
                                     <NavLink
                                         key={nav.name}
                                         to={nav.path}
