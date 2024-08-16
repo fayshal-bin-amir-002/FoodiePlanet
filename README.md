@@ -1,8 +1,5 @@
-# React + Vite
+# FoodiePlanet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FoodiePlanet is a modern restaurant website built with React and Tailwind CSS, offering a seamless and stylish user experience for food lovers.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Live Link](https://foodie-planet.netlify.app)
