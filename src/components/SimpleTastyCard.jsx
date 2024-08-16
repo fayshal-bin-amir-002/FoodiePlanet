@@ -9,7 +9,7 @@ const SimpleTastyCard = ({ card }) => {
     const [react, setReact] = useState(false);
     
     return (
-        <div className="overflow-hidden shadow-lg rounded-3xl flex flex-col">
+        <div className="overflow-hidden shadow-lg rounded-3xl flex flex-col bg-sky-50">
             <div className="relative">
                 <img className="w-full"
                     src={card.image}
@@ -25,9 +25,9 @@ const SimpleTastyCard = ({ card }) => {
             </div>
             <div className="px-6 py-4 mb-auto">
                 <p
-                    className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">{card.name}</p>
+                    className="font-medium text-lg inline-block transition duration-500 ease-in-out mb-2">{card.name}</p>
             </div>
-            <div className="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
+            <div className="px-6 py-3 flex flex-row items-center justify-between ">
                 <span href="#" className="py-1  font-regular text-gray-900 mr-1 flex flex-row items-center">
                     <IoIosTime className='text-lg' />
                     <span className="ml-1">{card?.time} Minutes</span>
