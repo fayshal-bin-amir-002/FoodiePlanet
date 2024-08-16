@@ -18,7 +18,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className="bg-white border-gray-200 py-4 border-b">
+            <nav className="bg-white border-gray-200 py-4 border-b mb-8 md:mb-10 lg:mb-12">
                 <div className="flex flex-wrap items-center justify-between">
                     <Link to={"/"} className="flex items-center w-36 lg:w-40">
                         <img src="./logo.png" alt="logo" />
@@ -36,7 +36,7 @@ const NavBar = () => {
                             </a>
                         </div>
                         <button onClick={() => setIsToggleOpen(!isToggleOpen)} data-collapse-toggle="mobile-menu-2" type="button"
-                            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 ms-3"
                             aria-controls="mobile-menu-2" aria-expanded="true">
                             <span className="sr-only">Open main menu</span>
                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
