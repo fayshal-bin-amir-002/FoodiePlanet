@@ -35,7 +35,7 @@ const NavBar = () => {
                                 <FaGithub className="inline" />
                             </a>
                         </div>
-                        <button onClick={() => setIsToggleOpen(!isToggleOpen)} data-collapse-toggle="mobile-menu-2" type="button"
+                        <button onClick={() => setIsToggleOpen(!isToggleOpen)} 
                             className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 ms-3"
                             aria-controls="mobile-menu-2" aria-expanded="true">
                             <span className="sr-only">Open main menu</span>
@@ -54,7 +54,7 @@ const NavBar = () => {
                     <div className="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul className={`lg:flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ${isToggleOpen ? 'flex' : 'hidden'}`}>
                             {
-                                navLinks.map((nav) => <li key={nav.name} className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-black lg:p-0 lg:hover:text-purple-700 duration-500 my-0.5 lg:my-0 text-lg font-normal text-center">
+                                navLinks.map((nav) => <li key={nav.name} className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-black lg:p-0 lg:hover:text-purple-700 my-0.5 lg:my-0 text-lg font-normal text-center ">
                                     <NavLink
                                         key={nav.name}
                                         to={nav.path}
