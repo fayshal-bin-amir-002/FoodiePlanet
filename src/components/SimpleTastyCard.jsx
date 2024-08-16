@@ -11,7 +11,7 @@ const SimpleTastyCard = ({ card }) => {
     return (
         <div className="overflow-hidden shadow-lg rounded-3xl flex flex-col bg-sky-50">
             <div className="relative">
-                <img className="w-full"
+                <img className="w-full h-[250px] object-cover"
                     src={card.image}
                     alt="image" />
                 <div
@@ -19,7 +19,7 @@ const SimpleTastyCard = ({ card }) => {
                 </div>
                 <button
                     onClick={() => setReact(!react)}
-                    className={`${react ? 'text-red-500' : 'text-white'} flex text-5xl absolute top-4 right-4 cursor-pointer transition duration-500 ease-in-out`}>
+                    className={`${react ? 'text-red-500' : 'text-gray-400'} flex text-4xl absolute top-4 right-4 cursor-pointer transition duration-500 ease-in-out bg-white p-2 rounded-full`}>
                     <IoIosHeart />
                 </button>
             </div>

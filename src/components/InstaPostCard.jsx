@@ -6,7 +6,7 @@ const InstaPostCard = ({ post }) => {
             {/* Author Section */}
             <div className="flex items-center p-4">
                 <img
-                    className="h-12 w-12 rounded-full object-contain"
+                    className="h-12 w-12 rounded-full object-contain bg-gray-200"
                     src="./logo.png"
                     alt="Author"
                 />
