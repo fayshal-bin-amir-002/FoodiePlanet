@@ -17,11 +17,11 @@ const SimpleTastyCard = ({ card }) => {
                 <div
                     className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
                 </div>
-                <div
+                <button
                     onClick={() => setReact(!react)}
-                    className={`${react ? 'text-red-500' : 'text-white'} text-5xl absolute top-0 right-0  px-4 py-2  mt-3 mr-3 cursor-pointer transition duration-500 ease-in-out`}>
+                    className={`${react ? 'text-red-500' : 'text-white'} flex text-5xl absolute top-4 right-4 cursor-pointer transition duration-500 ease-in-out`}>
                     <IoIosHeart />
-                </div>
+                </button>
             </div>
             <div className="px-6 py-4 mb-auto">
                 <p
